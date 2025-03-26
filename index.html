@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Product App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+    <style>
+        /* Basic styles for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .product-info p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .product-info .price {
+            color: #e74c3c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Skincare Product Store</h1>
+    <p>Find your perfect skincare routine!</p>
+</header>
+
+<div class="product-container">
+    <div class="product-card">
+        <img src="product1.jpg" alt="Product 1" class="product-img">
+        <div class="product-info">
+            <h3>Moisturizing Cream</h3>
+            <p>A rich cream that nourishes and hydrates your skin.</p>
+            <span class="price">$25.99</span>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="product2.jpg" alt="Product 2" class="product-img">
+        <div class="product-info">
+            <h3>Sunscreen Lotion</h3>
+            <p>Protect your skin from harmful UV rays with this lightweight sunscreen.</p>
+            <span class="price">$19.99</span>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="product3.jpg" alt="Product 3" class="product-img">
+        <div class="product-info">
+            <h3>Anti-aging Serum</h3>
+            <p>Reduce fine lines and wrinkles with this potent serum.</p>
+            <span class="price">$45.00</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Skincare Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
